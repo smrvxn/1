@@ -1,0 +1,105 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Designe\icon.jpg" />
+    <None Remove="Designe\line2.png" />
+    <None Remove="Designe\lineText.png" />
+    <None Remove="Windows\AvtoPage\accord.png" />
+    <None Remove="Windows\AvtoPage\amg63.png" />
+    <None Remove="Windows\AvtoPage\audia7.png" />
+    <None Remove="Windows\AvtoPage\audiq7.png" />
+    <None Remove="Windows\AvtoPage\bmwi8.png" />
+    <None Remove="Windows\AvtoPage\bmwx5.png" />
+    <None Remove="Windows\AvtoPage\california.png" />
+    <None Remove="Windows\AvtoPage\camg63.png" />
+    <None Remove="Windows\AvtoPage\camry.png" />
+    <None Remove="Windows\AvtoPage\civic.png" />
+    <None Remove="Windows\AvtoPage\cullinan.png" />
+    <None Remove="Windows\AvtoPage\dodge.png" />
+    <None Remove="Windows\AvtoPage\huracan.png" />
+    <None Remove="Windows\AvtoPage\impreza.png" />
+    <None Remove="Windows\AvtoPage\karoq.png" />
+    <None Remove="Windows\AvtoPage\lx570.png" />
+    <None Remove="Windows\AvtoPage\mazda6.png" />
+    <None Remove="Windows\AvtoPage\panamera.png" />
+    <None Remove="Windows\AvtoPage\q50.png" />
+    <None Remove="Windows\AvtoPage\qashqai.png" />
+    <None Remove="Windows\AvtoPage\qx50.png" />
+    <None Remove="Windows\AvtoPage\rx350.png" />
+    <None Remove="Windows\AvtoPage\rx7.png" />
+    <None Remove="Windows\AvtoPage\silvia.png" />
+    <None Remove="Windows\AvtoPage\skyline.png" />
+    <None Remove="Windows\AvtoPage\sonata.png" />
+    <None Remove="Windows\AvtoPage\stinger.png" />
+    <None Remove="Windows\AvtoPage\superb.png" />
+    <None Remove="Windows\AvtoPage\supra.png" />
+    <None Remove="Windows\AvtoPage\tiguan.png" />
+    <None Remove="Windows\AvtoPage\xf.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="22.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Designe\icon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Designe\line2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Designe\lineText.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Windows\AvtoPage\accord.png" />
+    <Resource Include="Windows\AvtoPage\amg63.png" />
+    <Resource Include="Windows\AvtoPage\audia7.png" />
+    <Resource Include="Windows\AvtoPage\audiq7.png" />
+    <Resource Include="Windows\AvtoPage\bmwi8.png" />
+    <Resource Include="Windows\AvtoPage\bmwx5.png" />
+    <Resource Include="Windows\AvtoPage\california.png" />
+    <Resource Include="Windows\AvtoPage\camg63.png" />
+    <Resource Include="Windows\AvtoPage\camry.png" />
+    <Resource Include="Windows\AvtoPage\civic.png" />
+    <Resource Include="Windows\AvtoPage\cullinan.png" />
+    <Resource Include="Windows\AvtoPage\dodge.png" />
+    <Resource Include="Windows\AvtoPage\huracan.png" />
+    <Resource Include="Windows\AvtoPage\impreza.png" />
+    <Resource Include="Windows\AvtoPage\karoq.png" />
+    <Resource Include="Windows\AvtoPage\lx570.png" />
+    <Resource Include="Windows\AvtoPage\mazda6.png" />
+    <Resource Include="Windows\AvtoPage\panamera.png" />
+    <Resource Include="Windows\AvtoPage\q50.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Windows\AvtoPage\qashqai.png" />
+    <Resource Include="Windows\AvtoPage\qx50.png" />
+    <Resource Include="Windows\AvtoPage\rx350.png" />
+    <Resource Include="Windows\AvtoPage\rx7.png" />
+    <Resource Include="Windows\AvtoPage\silvia.png" />
+    <Resource Include="Windows\AvtoPage\skyline.png" />
+    <Resource Include="Windows\AvtoPage\sonata.png" />
+    <Resource Include="Windows\AvtoPage\stinger.png" />
+    <Resource Include="Windows\AvtoPage\superb.png" />
+    <Resource Include="Windows\AvtoPage\supra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Windows\AvtoPage\tiguan.png" />
+    <Resource Include="Windows\AvtoPage\xf.png" />
+  </ItemGroup>
+
+</Project>

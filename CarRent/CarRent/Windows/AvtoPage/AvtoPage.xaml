@@ -1,0 +1,84 @@
+﻿<Page x:Class="CarRent.Windows.AvtoPage.AvtoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarRent.Windows.AvtoPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="AvtoPage"
+      DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource Self}}">
+
+    <StackPanel>
+        <Label Content="Avto" FontSize="48" Foreground="White" HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Bottom" Background="#472323" Height="80"
+                   BorderThickness="1" BorderBrush="Black" FontFamily="Engravers MT"/>
+
+        <StackPanel Orientation="Horizontal" Height="50" Background="#8A5454" >
+            <Label Content="Класс: " FontSize="22" Margin="30,5,5,5"/>
+            <ComboBox x:Name="classBox" Width="100" FontSize="22" Height="30" Margin="5" 
+                      ItemsSource="{Binding ClassFilters}" SelectionChanged="classBox_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Key}" FontSize="12"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            
+            <Label Content="Бренд: " FontSize="22" Margin="5"/>
+            <ComboBox x:Name="brendBox" Width="150" FontSize="22" Height="30" Margin="5"
+                      ItemsSource="{Binding BrandFilters}" SelectionChanged="brendBox_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Key}" FontSize="12"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <Label Content="Поиск " FontSize="22" Margin="400,5,5,5"/>
+            <TextBox x:Name="poisk" FontSize="22" Margin="5" Width="200" Background="#9F7C7C" Height="30" SelectionChanged="poisk_SelectionChanged"/>
+        </StackPanel>
+
+        <ListView x:Name="listwiew" Height="700" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding Avtos}" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10" Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+
+                            <Image Width="150" Height="150"
+                                   Source="{Binding Photo}" />
+
+                            <TextBlock FontSize="22" TextWrapping="Wrap" Width="700" Margin="10" >
+                                <Run Text="{Binding BrandName}" FontWeight="DemiBold"/>
+                                <Run Text="{Binding Mark}" FontWeight="DemiBold"/> 
+                                <LineBreak/>
+                                <Run Text="Класс: "/>
+                                <Run Text="{Binding ClassName}"/>
+                                <LineBreak/>
+                                <Run Text="Год: "/>
+                                <Run Text="{Binding YearOfProduction}"/>
+                            </TextBlock>
+                            
+
+                            <StackPanel Orientation="Vertical">
+
+                                <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
+                                    <Label Content="{Binding Price}" FontSize="22" FontWeight="DemiBold"/>
+                                    <Label Content="руб./сутки" FontSize="22" FontWeight="DemiBold"/>
+                                </StackPanel>
+
+                                <Button Width="200" Height="40" Foreground="White" Background="#C6E8BB" Margin="10,30,10,10"
+                                    FontSize="22" FontFamily="Segoe UI Semilight" BorderBrush="Black" BorderThickness="1"
+                                        Content="Сдать"/>
+                                <Button x:Name="info" Content="Подробнее" Width="200" Height="40" Background="#9F7C7C" Foreground="White"
+                                FontSize="22" FontFamily="Segoe UI Semilight" BorderBrush="Black" BorderThickness="1" Click="info_Click"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Image Source="/Designe/lineText.png" Margin="10" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackPanel>
+</Page>

@@ -1,0 +1,20 @@
+﻿CarRent
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\ASUS\OneDrive\Рабочий стол\CarRent\CarRent\obj\Debug\net6.0-windows\
+CarRent
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\ASUS\OneDrive\Рабочий стол\CarRent\CarRent\App.xaml
+101535645252
+
+20-178407243
+227-208739119
+MainWindow.xaml;Windows\AddKlient.xaml;Windows\AvtoPage\AvtoInfo.xaml;Windows\AvtoPage\AvtoPage.xaml;Windows\KlientInfo.xaml;Windows\KlientPage.xaml;Windows\Main.xaml;Windows\Register.xaml;Windows\SignIn.xaml;Windows\UpdateKlient.xaml;
+
+True
+
